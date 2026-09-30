@@ -33,7 +33,12 @@ Insert *class*, *sequence* and *ER* diagrams. Tables: `users(id, username, salt,
 Python 3, `sqlite3`, `hashlib.pbkdf2_hmac` (100,000 iterations), `csv`, `logging`. Parameterised SQL queries prevent SQL injection. Module-by-module description: see README structure.
 
 ## 10. Testing
-`tests/test_app.py` - 10 tests: validators, auth (wrong password, duplicate user, hash not plaintext), CRUD, user isolation, filtering, reports, empty report, CSV export. All pass. *Insert test screenshot.*
+`tests/test_app.py` - 10 tests: validators, auth (wrong password, duplicate user, hash not plaintext), CRUD, user isolation, filtering, reports, empty report, CSV export. All pass.
+<img width="907" height="347" alt="Screenshot 2026-09-30 205707" src="https://github.com/user-attachments/assets/92aa787d-25c0-4910-a7cc-f4ac918b0dd5" />
+<img width="928" height="388" alt="Screenshot 2026-09-30 205740" src="https://github.com/user-attachments/assets/926ac2e1-4665-4891-b5cc-c86dbc10d0a5" />
+<img width="652" height="237" alt="Screenshot 2026-09-30 205820" src="https://github.com/user-attachments/assets/82cda24e-a1f2-402d-a02b-380dadaa3573" />
+<img width="652" height="237" alt="image" src="https://github.com/user-attachments/assets/3c5f1159-8374-4745-aca0-d8defb8b5c11" />
+
 
 ## 11. Results and Screenshots
 Insert screenshots: login menu, add expense, list, summary, monthly report, export, tests.
