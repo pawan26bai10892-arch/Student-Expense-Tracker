@@ -1,0 +1,10 @@
+flowchart TD
+  U[User] --> M[main.py CLI]
+  M --> A[auth.py]
+  M --> X[expenses.py]
+  M --> R[reports.py]
+  M --> E[exporter.py]
+  A & X & R & E --> V[validators.py]
+  A & X & R & E --> D[(database.py / SQLite)]
+  A & X --> L[logger.py] --> F[app.log]
+  E --> C[CSV file]
