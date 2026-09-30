@@ -1,0 +1,16 @@
+sequenceDiagram
+  actor U as User
+  participant M as main.py
+  participant X as expenses.py
+  participant V as validators.py
+  participant D as SQLite
+  U->>M: choose "Add expense"
+  M->>U: prompt amount, category, date, description
+  U->>M: inputs
+  M->>X: add_expense(...)
+  X->>V: validate all fields
+  V-->>X: clean values (or ValueError)
+  X->>D: INSERT INTO expenses
+  D-->>X: new id
+  X-->>M: id
+  M-->>U: "Expense added."

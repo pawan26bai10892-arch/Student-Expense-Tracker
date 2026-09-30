@@ -1,0 +1,12 @@
+erDiagram
+  USERS ||--o{ EXPENSES : records
+  USERS { int id PK
+          string username UK
+          string salt
+          string password_hash }
+  EXPENSES { int id PK
+             int user_id FK
+             real amount
+             string category
+             string description
+             string date }

@@ -1,0 +1,12 @@
+flowchart TD
+  S([Start]) --> Q{Login or Register?}
+  Q -->|Register| RG[Validate and create user] --> Q
+  Q -->|Login| LG{Credentials valid?}
+  LG -->|No| Q
+  LG -->|Yes| MN[User menu]
+  MN --> OP[Add / View / Edit / Delete / Filter / Report / Export]
+  OP --> VA{Input valid?}
+  VA -->|No| ER[Show error] --> MN
+  VA -->|Yes| DB[(Update or read DB)] --> MN
+  MN -->|Logout| Q
+  Q -->|Exit| EN([End])

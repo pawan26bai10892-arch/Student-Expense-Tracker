@@ -1,0 +1,17 @@
+classDiagram
+  class Database { +get_connection(path) }
+  class Auth { +register(conn,user,pw) +login(conn,user,pw) }
+  class Expenses { +add_expense() +list_expenses() +update_expense() +delete_expense() }
+  class Reports { +total_spent() +by_category() +monthly_report() +format_report() }
+  class Exporter { +export_csv() }
+  class Validators { +validate_amount() +validate_date() +validate_category() +validate_username() +validate_password() +validate_month() }
+  class Logger { +get_logger() }
+  Auth ..> Database
+  Expenses ..> Database
+  Reports ..> Database
+  Exporter ..> Expenses
+  Auth ..> Validators
+  Expenses ..> Validators
+  Reports ..> Validators
+  Auth ..> Logger
+  Expenses ..> Logger
