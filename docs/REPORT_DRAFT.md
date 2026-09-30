@@ -34,14 +34,18 @@ Python 3, `sqlite3`, `hashlib.pbkdf2_hmac` (100,000 iterations), `csv`, `logging
 
 ## 10. Testing
 `tests/test_app.py` - 10 tests: validators, auth (wrong password, duplicate user, hash not plaintext), CRUD, user isolation, filtering, reports, empty report, CSV export. All pass.
+<img width="837" height="375" alt="Screenshot 2026-09-30 210149" src="https://github.com/user-attachments/assets/212f13f4-48f5-43bb-a794-f63da4bbad33" />
+<img width="736" height="367" alt="Screenshot 2026-09-30 210201" src="https://github.com/user-attachments/assets/1f80818b-b2dc-4b51-81a0-e2831d0f693e" />
+<img width="789" height="389" alt="Screenshot 2026-09-30 210210" src="https://github.com/user-attachments/assets/17676fae-2dce-4e17-87cd-0c9d419b9588" />
+<img width="698" height="368" alt="Screenshot 2026-09-30 210239" src="https://github.com/user-attachments/assets/93149a0a-830c-4b74-bd90-65e4dfe921fe" />
+<img width="902" height="354" alt="Screenshot 2026-09-30 210316" src="https://github.com/user-attachments/assets/40e18db5-e5e6-48ec-9a05-a4caf62fac97" />
+
+## 11. Results and Screenshots
 <img width="907" height="347" alt="Screenshot 2026-09-30 205707" src="https://github.com/user-attachments/assets/92aa787d-25c0-4910-a7cc-f4ac918b0dd5" />
 <img width="928" height="388" alt="Screenshot 2026-09-30 205740" src="https://github.com/user-attachments/assets/926ac2e1-4665-4891-b5cc-c86dbc10d0a5" />
 <img width="652" height="237" alt="Screenshot 2026-09-30 205820" src="https://github.com/user-attachments/assets/82cda24e-a1f2-402d-a02b-380dadaa3573" />
+__
 <img width="652" height="237" alt="image" src="https://github.com/user-attachments/assets/3c5f1159-8374-4745-aca0-d8defb8b5c11" />
-
-
-## 11. Results and Screenshots
-Insert screenshots: login menu, add expense, list, summary, monthly report, export, tests.
 
 ## 12. Challenges Faced
 Handling invalid input without crashing (solved with `ValueError` and a single catch point in the menu); keeping users' data separate; deciding on password storage.
